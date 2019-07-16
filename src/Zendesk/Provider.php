@@ -16,6 +16,13 @@ class Provider extends AbstractProvider
      * {@inheritdoc}
      */
     protected $scopes = ['read'];
+    
+    /**
+     * The separating character for the requested scopes.
+     *
+     * @var string
+     */
+    protected $scopeSeparator = ' ';
 
     /**
      * {@inheritdoc}
