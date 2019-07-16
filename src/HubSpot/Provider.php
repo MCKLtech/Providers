@@ -21,6 +21,13 @@ class Provider extends AbstractProvider
             'https://app.hubspot.com/oauth/authorize', $state
         );
     }
+    
+    /**
+     * The separating character for the requested scopes.
+     *
+     * @var string
+     */
+    protected $scopeSeparator = ' ';
 
     /**
      * {@inheritdoc}
